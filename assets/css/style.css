@@ -258,3 +258,193 @@ label {
     background-image: url('../images/Sleep.png');
     background-size: 100% 100%;
 }
+
+/**Screen Size Changes**/
+
+@media screen and (max-width: 980px){
+
+    .Wrapper{ 
+        width:700px;
+
+    }
+
+    .content{
+        width: 700px;
+        margin: 50px;
+    }
+
+    .aboutMeHeader{
+        padding:30px;
+    }
+
+    .aboutText{
+       margin:0 auto;
+
+    }
+    .topBar{
+        width: auto;
+    }
+
+    .nameHeader{
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .Wrapper{
+        width: 600px; 
+        margin: 30px auto 70px auto;
+    }
+
+    .content{
+        width:600px;
+        margin: 20px auto 30px auto;
+    }
+
+    .aboutMeHeader{
+        padding:20px;
+    }
+    .aboutText{
+        margin: 0 auto;
+    }
+
+    .topBar{
+        width: auto;
+    }
+
+    .nameHeader{
+        margin-left: 25px;
+    }
+
+    .allHeader{
+        height: 40px;
+        width: 600px;
+        margin-top:20px;
+    }
+
+    /**Portfolio changes**/
+
+    .portBox{
+        width:240px;
+        height: 200px;
+    }
+
+    .portHeader{
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .portRow{
+        width:610px;
+    }
+    
+    /**CONTACT**/
+
+    input, textarea{
+        width: 560px;
+        height: 200px;
+        font: 16px;
+    }
+
+    .contactForm, .formModule {
+        width: 600px;
+    }
+
+    .contactHeader{
+        padding: 10px;
+        margin: 30px 20px 20px 20px;
+        line-height: 0;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    .Wrapper{
+        width: 500px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .content{
+        width:500px;
+        margin: auto;
+    }
+
+    .aboutMeHeader{
+        padding:20px;
+    }
+    .aboutText{
+        margin: 0 auto;
+    }
+
+    .topBar{
+        width: auto;
+        background-color: #4aaaa5;
+    }
+
+    .nameHeader{
+        margin-left: 0px;
+        width:648px;
+    }
+
+    .nameHeader span{
+        width:648px;
+        text-align: center;
+        background-color: #4aaaa5;
+    }
+
+    .topLink{
+        width:648px;
+        text-align: center;
+        background-color: whitesmoke;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topBar ul {
+        float: left;
+    }
+
+    .allHeader{
+        height: 40px;
+        width: 500px;
+        margin-top:20px;
+    }
+
+    /**Portfolio changes**/
+
+    .portBox{
+        width:360px;
+        height: 260px;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .portHeader{
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .portRow{
+        margin:0;
+    }
+
+    /**CONTACT**/
+
+    input, textarea{
+        width: 400px;
+        height: 100px;
+        
+    }
+
+    .contactForm, .formModule {
+        width: 500px;
+    }
+
+    .contactHeader{
+        padding: 10px;
+        margin: 30px 20px 20px 20px;
+        line-height: 0;
+    }
+}
