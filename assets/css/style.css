@@ -12,24 +12,23 @@
 /**PAGE BASE DESIGN**/
 
 .Wrapper {
-    width: 960px;
-    padding: 10px;
+    width: 650px;
     background-color: #fff;
     float: left;
-    overflow: auto;
     padding:10px;
+    
 }
 
 hr {
-  width: 90%;
+    width: 90%;
 }
 
 
 .content {
-  width: 960px;
-  height: 660px;
-  padding: 0;
-  margin: 55px auto 80px auto;
+    width: 960px;
+    
+    padding: 0;
+    margin: 55px auto 80px auto;
 }
 
 body {
@@ -37,6 +36,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
+    height:100vh;
 }
 
 .topBar ul {
@@ -97,6 +97,64 @@ header {
     color: #4aaaa5;
 }
 
+/**My Info Box for all pages**/
+
+.connectLinks li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.connectLinksHeader {
+    font-weight: bolder;
+    color: #4aaaa5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.connectLinksWrapper {
+    background-color: #fff;
+    width: 270px;
+    height: 230px;
+    float: left;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.email-icon {
+  background-image: url('../images/email-icon.png');
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+
+}
+
+.linkedin-icon {
+  background-image: url('../images/linkedin-icon.png');
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.github-icon {
+  background-image: url('../images/github-icon.png');
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.linkElement {
+  display: inline-block;
+  float: left;
+  margin: 3px 2px;
+}
+
+.connectLinks {
+    background-color: transparent;
+    width: 200px;
+    margin: 0 auto;
+}
 
 /**INDEX**/
 .aboutMeHeader {
@@ -149,6 +207,7 @@ header {
     right: 0;
     text-align: center;
     border-top: 15px solid #4aaaa5;
+    position: fixed;
 }
 
 .footerText {
@@ -173,13 +232,13 @@ header {
 
 .formModule {
     margin: 0 auto;
-    width: 660px;
+    width: 620px;
     padding: 2px;
 }
 
 input, textarea {
     font: 16px #ccc;
-    width: 660px;
+    width: 620px;
     height: 200px;
 }
 
@@ -246,16 +305,16 @@ label {
   text-align: center;
 }
 
-#Game{
-    background-image: url('../images/GamePic.jpg');
+#project1{
+    background-image: url('../images/project1-icon.png');
     background-size: 100% 100%;
 }
-#Swim{
-    background-image: url('../images/SwimPic.jpg');
+#wordGame{
+    background-image: url('../images/wordGame-icon.png');
     background-size: 100% 100%;
 }
-#Sleep{
-    background-image: url('../images/Sleep.png');
+#triviaGame{
+    background-image: url('../images/triviaGame.png');
     background-size: 100% 100%;
 }
 
@@ -264,7 +323,7 @@ label {
 @media screen and (max-width: 980px){
 
     .Wrapper{ 
-        width:700px;
+        width:600px;
 
     }
 
@@ -289,25 +348,59 @@ label {
         margin-left: 50px;
     }
 
+    .connectLinksWrapper {
+        width: 250px;
+        height: 210px;
+        padding: 13px;
+        margin-left: 30px;
+      }
+  
+      .email-icon,
+      .linkedin-icon,
+      .github-icon {
+        background-size: 65px;
+        width: 65px;
+        height: 65px;
+      }
+  
+      .connectLinks {
+        margin: 0 auto;
+        width: 210px;
+      }
+  
+      .connectLinksHeader {
+        font-size: 20px;
+      }
+
 }
 
 @media screen and (max-width:768px){
-    .Wrapper{
-        width: 600px; 
+    .content{
+        width: 700px; 
         margin: 30px auto 70px auto;
     }
 
-    .content{
-        width:600px;
-        margin: 20px auto 30px auto;
+    .Wrapper{
+        width:680px;
+        padding: 2px;
+        margin-bottom: 20px;
+      
     }
 
     .aboutMeHeader{
         padding:20px;
     }
     .aboutText{
-        margin: 0 auto;
+        float: left;
+        display: inline-block;
+        width: 380px;
+        margin: 0;
+        clear: none;
     }
+    .aboutMePhoto {
+        width: 210px;
+        display: inline-block;
+      }
 
     .topBar{
         width: auto;
@@ -338,6 +431,21 @@ label {
     .portRow{
         width:610px;
     }
+    .aboutText {
+        float: left;
+        display: inline-block;
+        width: 380px;
+        margin: 0;
+        clear: none;
+    }
+    
+    .aboutMePhoto {
+        width: 210px;
+        display: inline-block;
+    }
+    .portPhoto {
+        width: 200px;
+    }
     
     /**CONTACT**/
 
@@ -356,27 +464,54 @@ label {
         margin: 30px 20px 20px 20px;
         line-height: 0;
     }
+    /**LINK**/
+    .connectLinksWrapper {
+        width: 680px;
+        height: 170px;
+        padding: 2px;
+        clear: both;
+        left: 0;
+        margin-left: 0;
+        text-align: left;
+        margin-right:10px;
+    }
+
+    .connectLinks {
+        width: 580px;
+    }
+
+    .connectLinks,
+    .connectLinksHeader{
+        margin-left: 50px;
+        padding: 6px;
+    }
+
+    .nonHeadFont {
+        font-size: 14px;
+    }
 
 }
 
 @media screen and (max-width:640px){
     .Wrapper{
-        width: 500px;
-        margin-top: 20px;
-        margin-right: 10px;
+        width: 580px;
     }
 
     .content{
-        width:500px;
-        margin: auto;
+        width: 600px;
+        margin: 40px 20px;
+        height: 600px;
     }
 
     .aboutMeHeader{
         padding:20px;
     }
     .aboutText{
-        margin: 0 auto;
+        margin-left: 25px;
     }
+    .aboutMePhoto {
+        margin-left:30px;
+      }
 
     .topBar{
         width: auto;
@@ -426,8 +561,19 @@ label {
         margin: 10px;
     }
 
-    .portRow{
-        margin:0;
+    .portfolioItems {
+        width: 550px;
+        margin: 0 auto;
+      }
+    
+    .portItemText {
+        top:270px;
+        line-height: 70px;
+    }
+    
+    .portRow {
+        width: 340px;
+        margin: 20px 10px;
     }
 
     /**CONTACT**/
@@ -447,4 +593,41 @@ label {
         margin: 30px 20px 20px 20px;
         line-height: 0;
     }
-}
+
+    .formElement{
+        margin-left:40px;
+    }
+    input, textarea {
+        font: 13px #ccc;
+        width: 500px;
+        padding: 5px;
+    }
+    label{
+        width:60%;
+    }
+
+    /**Link**/
+    .connectLinksWrapper {
+        width: 580px;
+        height: 160px;
+        padding: 6px;
+        margin-bottom: 90px;
+        
+    }
+    
+    .email-icon,
+    .linkedin-icon,
+    .github-icon {
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .connectLinks {
+        margin: 0 auto;
+        width: 135px;
+    }
+    
+    .connectLinksHeader {
+        font-size: 20px;
+    }
