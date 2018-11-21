@@ -16,3 +16,5 @@ Word Game:https://restituo.github.io/WordGame/
 CHANGES:
 
 1) Fixed screen size changes for elements to display more cleanly
+
+2) Added a personal info block for email, linkln, and github
